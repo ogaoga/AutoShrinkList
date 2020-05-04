@@ -15,6 +15,7 @@
 		A942F5B0245FC79200800546 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A942F5AE245FC79200800546 /* LaunchScreen.storyboard */; };
 		A942F5BB245FC79300800546 /* AutoShrinkListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942F5BA245FC79300800546 /* AutoShrinkListTests.swift */; };
 		A942F5C6245FC79300800546 /* AutoShrinkListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942F5C5245FC79300800546 /* AutoShrinkListUITests.swift */; };
+		A942F5D4245FD0E000800546 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942F5D3245FD0E000800546 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A942F5C1245FC79300800546 /* AutoShrinkListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoShrinkListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A942F5C5245FC79300800546 /* AutoShrinkListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoShrinkListUITests.swift; sourceTree = "<group>"; };
 		A942F5C7245FC79300800546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A942F5D3245FD0E000800546 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				A942F5A3245FC79000800546 /* AppDelegate.swift */,
 				A942F5A5245FC79000800546 /* SceneDelegate.swift */,
 				A942F5A7245FC79000800546 /* ContentView.swift */,
+				A942F5D3245FD0E000800546 /* ViewModel.swift */,
 				A942F5A9245FC79200800546 /* Assets.xcassets */,
 				A942F5AE245FC79200800546 /* LaunchScreen.storyboard */,
 				A942F5B1245FC79200800546 /* Info.plist */,
@@ -269,6 +272,7 @@
 			files = (
 				A942F5A4245FC79000800546 /* AppDelegate.swift in Sources */,
 				A942F5A6245FC79000800546 /* SceneDelegate.swift in Sources */,
+				A942F5D4245FD0E000800546 /* ViewModel.swift in Sources */,
 				A942F5A8245FC79000800546 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -439,6 +443,7 @@
 				DEVELOPMENT_TEAM = 5K4A4CXSS4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AutoShrinkList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +464,7 @@
 				DEVELOPMENT_TEAM = 5K4A4CXSS4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AutoShrinkList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

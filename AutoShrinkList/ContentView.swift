@@ -9,13 +9,35 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, World!")
+  
+  @ObservedObject var viewModel = ViewModel()
+  
+  var body: some View {
+    NavigationView {
+      VStack {
+        TextField("Search number", text: self.$viewModel.searchText)
+          .textFieldStyle(RoundedBorderTextFieldStyle())
+          .padding()
+        List {
+          ForEach(self.viewModel.items, id: \.self) {
+            Text($0)
+          }
+        }
+        Spacer(minLength: self.viewModel.keyboardHeight)
+      }
+      .navigationBarTitle(Text("Search"))
     }
+    .onAppear() {
+      self.viewModel.onAppear()
+    }
+    .onDisappear() {
+      self.viewModel.onDisappear()
+    }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+  static var previews: some View {
+    ContentView()
+  }
 }
